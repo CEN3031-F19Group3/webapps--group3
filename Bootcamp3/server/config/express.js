@@ -40,7 +40,7 @@ module.exports.init = function() {
      Sends a response (res) to go to the homepage for all routes not specified */ 
   app.all('/*', function(req, res) {
    
-  res.sendFile(path.resolve('client/index.html'));
+    res.sendFile(path.resolve('client/index.html'));
   });
   
   return app;
